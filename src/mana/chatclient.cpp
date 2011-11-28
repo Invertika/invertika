@@ -1,0 +1,82 @@
+/*
+ * manalib
+ * Copyright 2010, Thorbjørn Lindeijer <thorbjorn@lindeijer.nl>
+ *
+ * This file is part of manalib.
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#include "chatclient.h"
+
+#include <mana/protocol.h>
+
+#include "messagein.h"
+#include "messageout.h"
+
+#include <iostream>
+
+namespace Mana {
+
+ChatClient::ChatClient(QObject *parent)
+    : ENetClient(parent)
+    , mAuthenticated(false)
+{
+}
+
+void ChatClient::authenticate(const QString &token)
+{
+    // Send in the security token
+    MessageOut msg(PCMSG_CONNECT);
+    msg.writeString(token, 32);
+    send(msg);
+}
+
+void ChatClient::messageReceived(MessageIn &message)
+{
+    switch (message.id()) {
+    case CPMSG_CONNECT_RESPONSE:
+        handleAuthenticationResponse(message);
+        break;
+    case XXMSG_INVALID:
+        qWarning() << "(ChatClient::messageReceived) Invalid received! "
+                      "Did we send an invalid message?";
+        break;
+    default:
+        qDebug() << "(ChatClient::messageReceived) Unknown message "
+                 << message;
+        break;
+    }
+}
+
+void ChatClient::handleAuthenticationResponse(MessageIn &message)
+{
+    switch (message.readInt8()) {
+    default:
+        // Unknown error
+        emit authenticationFailed(tr("Unknown error"));
+        break;
+    case ERRMSG_FAILURE:
+        emit authenticationFailed(tr("Character not found"));
+        break;
+    case ERRMSG_OK:
+        if (!mAuthenticated) {
+            mAuthenticated = true;
+            emit authenticatedChanged();
+        }
+        break;
+    }
+}
+
+} // namespace Mana
