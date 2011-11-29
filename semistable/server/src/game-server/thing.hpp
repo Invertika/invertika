@@ -22,6 +22,7 @@
 #define THING_H
 
 #include "protocol.h"
+#include "utils/null.h"
 
 #include <set>
 
