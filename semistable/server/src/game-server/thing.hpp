@@ -39,7 +39,7 @@ class Thing
         /**
          * Constructor.
          */
-        Thing(ThingType type, MapComposite *map = 0)
+        Thing(ThingType type, MapComposite *map = NULL)
           : mMap(map),
             mType(type)
         {}
