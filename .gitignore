@@ -1,0 +1,9 @@
+# Build artifacts
+*.o
+ui_*.h
+moc_*.cpp
+Makefile*
+manamobile
+
+# Qt Creator artifacts
+*.pro.user
