@@ -1,35 +1,39 @@
-pkgname=invertika-server-svn
-pkgver=2291
+pkgname=invertika-server-git
+pkgver=20111226
 pkgrel=1
 pkgdesc="Server for Invertika, based on The Mana World (tmwserv)"
-arch=('any')
+arch=('i686' 'x86_64')
 url="http://invertika.org/"
 license=('GPL2')
-makedepends=('subversion' 'cmake')
-depends=('enet-old' 'libxml2' 'lua' 'physfs' 'sqlite3')
+makedepends=('git' 'cmake')
+depends=('libxml2' 'lua' 'physfs' 'sqlite3')
 provides=('invertika-server')
-_svntrunk="http://invertika.googlecode.com/svn/tags/1879-semistable-client-server/server/"
-_svnmod=invertika-server
+
+_gitroot=git://github.com/Invertika/invertika.git
+_gitname=invertika
 
 build() {
   cd "$srcdir"
+  msg "Connecting to GIT server...."
 
-  if [ -d $_svnmod/.svn ]; then
-    (cd $_svnmod && svn up -r $pkgver)
+  if [[ -d "$_gitname" ]]; then
+    cd "$_gitname" && git pull origin
+    msg "The local files are updated."
   else
-    svn co "$_svntrunk" --config-dir ./ -r $pkgver $_svnmod
+    git clone --depth=1 "$_gitroot" "$_gitname"
   fi
 
-  msg "SVN checkout done or server timeout"
-  msg "Starting make..."
+  msg "GIT checkout done or server timeout"
+  msg "Starting build..."
 
-  rm -rf "$srcdir/$_svnmod-build"
-  cp -r "$srcdir/$_svnmod" "$srcdir/$_svnmod-build"
-  cd "$srcdir/$_svnmod-build"
+  rm -rf "$srcdir/$_gitname-build"
+  cp -R "$srcdir/$_gitname" "$srcdir/$_gitname-build"
+  cd "$srcdir/$_gitname-build"
 
   #
   # BUILD
   #
+  cd semistable/server
   cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="/usr"
   make
   make DESTDIR="$pkgdir/" install
