@@ -1,7 +1,7 @@
 pkgname=invertika-server-git
 pkgver=20111226
 pkgrel=1
-pkgdesc="Server for Invertika, based on The Mana World (tmwserv)"
+pkgdesc="Server for Invertika (basically a version of manaserv)"
 arch=('i686' 'x86_64')
 url="http://invertika.org/"
 license=('GPL2')
