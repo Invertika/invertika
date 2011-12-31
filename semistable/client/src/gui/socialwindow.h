@@ -74,6 +74,11 @@ public:
 
     void showPartyCreate();
 
+    virtual void setVisible(bool v)
+    {
+        Window::setVisible(false);
+    }
+
 protected:
     friend class SocialTab;
 

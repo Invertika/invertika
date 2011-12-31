@@ -166,6 +166,7 @@ static void createGuiWindows()
                                             new ItemShortcutContainer);
     emoteShortcutWindow = new ShortcutWindow("EmoteShortcut",
                                              new EmoteShortcutContainer);
+    emoteShortcutWindow->setVisible(false);
     outfitWindow = new OutfitWindow();
     specialsWindow = new SpecialsWindow();
     socialWindow = new SocialWindow();
@@ -668,7 +669,7 @@ void Game::handleInput()
                         requestedWindow = equipmentWindow;
                         break;
                     case KeyboardConfig::KEY_WINDOW_SKILL:
-                        requestedWindow = skillDialog;
+                        //requestedWindow = skillDialog;
                         break;
                     case KeyboardConfig::KEY_WINDOW_MINIMAP:
                         minimap->toggle();
@@ -686,13 +687,13 @@ void Game::handleInput()
                         requestedWindow = debugWindow;
                         break;
                     case KeyboardConfig::KEY_WINDOW_SOCIAL:
-                        requestedWindow = socialWindow;
+                        //requestedWindow = socialWindow;
                         break;
                     case KeyboardConfig::KEY_WINDOW_EMOTE_SHORTCUT:
-                        requestedWindow = emoteShortcutWindow;
+                        //requestedWindow = emoteShortcutWindow;
                         break;
                     case KeyboardConfig::KEY_WINDOW_OUTFIT:
-                        requestedWindow = outfitWindow;
+                        //requestedWindow = outfitWindow;
                         break;
                     case KeyboardConfig::KEY_SCREENSHOT:
                         // Screenshot (picture, hence the p)

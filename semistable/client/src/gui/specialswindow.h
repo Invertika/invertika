@@ -53,6 +53,11 @@ class SpecialsWindow : public Window, public gcn::ActionListener {
 
         void draw(gcn::Graphics *graphics);
 
+        virtual void setVisible(bool v)
+        {   
+            Window::setVisible(false);
+        } 
+
     private:
         // (re)constructs the list of specials
         void rebuild(const std::map<int, Special> &specialData);

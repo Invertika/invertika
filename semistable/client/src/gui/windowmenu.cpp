@@ -50,18 +50,18 @@ WindowMenu::WindowMenu():
 {
     int x = 0, h = 0;
 
-    addButton(":-)", x, h);
+    //addButton(":-)", x, h);
     addButton(N_("Status"), x, h);
     addButton(N_("Equipment"), x, h);
     addButton(N_("Inventory"), x, h);
 
-    if (skillDialog->hasSkills())
-        addButton(N_("Skills"), x, h);
+    //if (skillDialog->hasSkills())
+        //addButton(N_("Skills"), x, h);
 
     // if (specialsWindow->hasSpecials())
-        addButton(N_("Specials"), x, h);
+        //addButton(N_("Specials"), x, h);
 
-    addButton(N_("Social"), x, h);
+    //addButton(N_("Social"), x, h);
     addButton(N_("Shortcut"), x, h);
     addButton(N_("Setup"), x, h);
 
