@@ -1,5 +1,5 @@
 pkgname=invertika-git
-pkgver=20111226
+pkgver=20120111
 pkgrel=1
 pkgdesc="A german MMORPG based on the Manasource plattform"
 arch=('i686' 'x86_64')
