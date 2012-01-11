@@ -1,2 +1,2 @@
 #!/bin/bash
-msgmerge po/de.po po/mana.pot
+msgmerge po/de.po po/invertika.pot
