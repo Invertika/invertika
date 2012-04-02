@@ -159,20 +159,33 @@ void Viewport::draw(gcn::Graphics *gcnGraphics)
     };
 
     // Don't move camera so that the end of the map is on screen
-    const int viewXmax =
-        mMap->getWidth() * mMap->getTileWidth() - graphics->getWidth();
-    const int viewYmax =
-        mMap->getHeight() * mMap->getTileHeight() - graphics->getHeight();
-    if (mMap)
+    const int mapWidthPixels = mMap->getWidth() * mMap->getTileWidth();
+    const int mapHeightPixels = mMap->getHeight() * mMap->getTileHeight();
+    const int viewXmax = mapWidthPixels - graphics->getWidth();
+    const int viewYmax = mapHeightPixels - graphics->getHeight();
+    if (mPixelViewX < 0)
+        mPixelViewX = 0;
+    if (mPixelViewY < 0)
+        mPixelViewY = 0;
+    if (mPixelViewX > viewXmax)
+        mPixelViewX = viewXmax;
+    if (mPixelViewY > viewYmax)
+        mPixelViewY = viewYmax;
+
+    // Center camera on map if the map is smaller than the screen
+    if (mapWidthPixels < graphics->getWidth())
+        mPixelViewX = (mapWidthPixels - graphics->getWidth()) / 2;
+    if (mapHeightPixels < graphics->getHeight())
+        mPixelViewY = (mapHeightPixels - graphics->getHeight()) / 2;
+
+    // Draw black background if map is smaller than the screen
+    if (        mapWidthPixels < graphics->getWidth()
+            ||  mapHeightPixels < graphics->getHeight())
     {
-        if (mPixelViewX < 0)
-            mPixelViewX = 0;
-        if (mPixelViewY < 0)
-            mPixelViewY = 0;
-        if (mPixelViewX > viewXmax)
-            mPixelViewX = viewXmax;
-        if (mPixelViewY > viewYmax)
-            mPixelViewY = viewYmax;
+        gcnGraphics->setColor(gcn::Color(0, 0, 0));
+        gcnGraphics->fillRectangle(
+                gcn::Rectangle(0, 0, getWidth(), getHeight()));
+
     }
 
     // Draw tiles and sprites
