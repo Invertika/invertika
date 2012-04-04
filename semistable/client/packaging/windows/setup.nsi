@@ -2,11 +2,11 @@ CRCCheck on
 SetCompress off
 SetCompressor /SOLID lzma
 
-!define SRCDIR "..\..\..\..\#Installer\invertika\"
+!define SRCDIR "..\..\..\..\..\..\#Installer\invertika\"
 
 ; HM NIS Edit helper defines
 !define PRODUCT_NAME "Invertika"
-!define PRODUCT_VERSION "v1663"
+!define PRODUCT_VERSION "v7000"
 !define PRODUCT_PUBLISHER "The Invertika Developer Team"
 !define PRODUCT_WEB_SITE "http://invertika.org"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\invertika.exe"
