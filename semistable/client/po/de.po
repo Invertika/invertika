@@ -30,26 +30,26 @@ msgstr "Einstellungen"
 #: src/client.cpp:625
 #, fuzzy
 msgid "Connecting to server"
-msgstr "Verbinde mit [Benutzerdatenserver]..."
+msgstr "Verbinde mit dem Server"
 
 #: src/client.cpp:652
 #, fuzzy
 msgid "Logging in"
-msgstr "Anmelden"
+msgstr "melde an"
 
 #: src/client.cpp:685
 msgid "Entering game world"
-msgstr ""
+msgstr "Betrete das Spiel"
 
 #: src/client.cpp:741
 #, fuzzy
 msgid "Requesting characters"
-msgstr "Spielfigur auswählen"
+msgstr "empfange Charchtäre"
 
 #: src/client.cpp:770
 #, fuzzy
 msgid "Connecting to the game server"
-msgstr "Verbinde mit [Charakterserver]..."
+msgstr "Verbinde mit dem Spiele Server"
 
 #: src/client.cpp:801 src/client.cpp:808 src/client.cpp:942
 #: src/gui/changeemaildialog.cpp:156 src/gui/changepassworddialog.cpp:149
@@ -62,11 +62,11 @@ msgstr "Fehler"
 
 #: src/client.cpp:817
 msgid "Requesting registration details"
-msgstr ""
+msgstr "Benötige Registrierungs Details"
 
 #: src/client.cpp:844
 msgid "Password Change"
-msgstr "Passwort ändern:"
+msgstr "Passwort ändern"
 
 #: src/client.cpp:845
 msgid "Password changed successfully!"
@@ -79,7 +79,7 @@ msgstr "E-Mail ändern"
 #: src/client.cpp:865
 #, fuzzy
 msgid "Email changed successfully!"
-msgstr "Mitglied wurde erfolgreich Befördert."
+msgstr "Mitglied wurde erfolgreich befördert."
 
 #: src/client.cpp:885
 #, fuzzy
@@ -93,12 +93,12 @@ msgstr "Leb wohl und komme jeder Zeit wieder..."
 #: src/client.cpp:1009 src/client.cpp:1032
 #, c-format
 msgid "%s doesn't exist and can't be created! Exiting."
-msgstr ""
+msgstr "%s existiert nicht und kann nicht erstellt werden! Beende."
 
 #: src/client.cpp:1121
 #, fuzzy, c-format
 msgid "Invalid update host: %s"
-msgstr "Ungültiger Updateserver: "
+msgstr "Ungültiger Updateserver: %s"
 
 #: src/client.cpp:1155 src/client.cpp:1161
 msgid "Error creating updates directory!"
@@ -118,11 +118,11 @@ msgstr "/help > diese Hilfe anzeigen"
 
 #: src/commandhandler.cpp:159
 msgid "/where > Display map name"
-msgstr "/where > Zeige den Namen der aktuellen Karte"
+msgstr "/where > Zeige den Map Namen an"
 
 #: src/commandhandler.cpp:160
 msgid "/who > Display number of online users"
-msgstr "/who > Zeige Anzahl der angemeldeten Spieler"
+msgstr "/who > Zeige die Anzahl der angemeldeten Spieler"
 
 #: src/commandhandler.cpp:161
 msgid "/me > Tell something about yourself"
@@ -155,11 +155,11 @@ msgstr "/q > Ersatz für query"
 
 #: src/commandhandler.cpp:171
 msgid "/ignore > ignore a player"
-msgstr ""
+msgstr "ignoriert einen Spieler"
 
 #: src/commandhandler.cpp:172
 msgid "/unignore > stop ignoring a player"
-msgstr ""
+msgstr "deignoriert einen Spieler"
 
 #: src/commandhandler.cpp:174
 msgid "/list > Display all public channels"
@@ -172,15 +172,15 @@ msgstr "/join > Trete einem Kanal bei oder erstelle einen neuen Kanal"
 #: src/commandhandler.cpp:177
 #, fuzzy
 msgid "/createparty > Create a new party"
-msgstr "/create > Erstelle eine neue Party"
+msgstr "/createparty > Erstelle eine neue Party"
 
 #: src/commandhandler.cpp:178
 msgid "/party > Invite a user to party"
-msgstr "/party > Lade einen Benutzer zu deiner Party ein"
+msgstr "/party > Lädt einen Benutzer zu deiner Party ein"
 
 #: src/commandhandler.cpp:180
 msgid "/record > Start recording the chat to an external file"
-msgstr "/record > Starte die Aufzeichnung des Chats in eine Datei"
+msgstr "/record > Started die Aufzeichnung des Chats in eine externe Datei."
 
 #: src/commandhandler.cpp:181
 msgid "/toggle > Determine whether <return> toggles the chat log"
@@ -214,7 +214,7 @@ msgstr "Befehl: /help <Befehl>"
 
 #: src/commandhandler.cpp:195
 msgid "This command displays help on <command>."
-msgstr "Dieser Befehl zeigt die Hilfe für <Befehl>."
+msgstr "Dieser Befehl zeigt die Hilfe für <Befehl> an."
 
 #: src/commandhandler.cpp:203
 msgid "Command: /announce <msg>"
@@ -240,11 +240,11 @@ msgstr "Dieser Befehl bereinigt den Chatlog des vorherigen Chats."
 
 #: src/commandhandler.cpp:215
 msgid "Command: /ignore <player>"
-msgstr "Befehl: /item <Wert>"
+msgstr "Befehl: /ignore <Spieler>"
 
 #: src/commandhandler.cpp:216
 msgid "This command ignores the given player regardless of current relations."
-msgstr "Dieser Befehl zeigt die Anzahl der Spieler an, die gerade online sind."
+msgstr "Dieser Befehl ignoriert den Spieler <Spieler> ungeachtet der Beziehung."
 
 #: src/commandhandler.cpp:221
 msgid "Command: /join <channel>"
@@ -252,7 +252,7 @@ msgstr "Befehl: /join <Kanal>"
 
 #: src/commandhandler.cpp:222
 msgid "This command makes you enter <channel>."
-msgstr "Dieser Befehl lässt dich dem Kanal <Kanal> beitreten."
+msgstr "Dieser Befehl lässt dich den Kanal <Kanal> beitreten."
 
 #: src/commandhandler.cpp:223
 msgid "If <channel> doesn't exist, it's created."
@@ -393,10 +393,10 @@ msgstr "Dieser Befehl zeigt, wann sich die Chatzeile schließt."
 #: src/commandhandler.cpp:291 src/gui/widgets/whispertab.cpp:93
 #, fuzzy
 msgid "Command: /unignore <player>"
-msgstr "Befehl: /item <Wert>"
+msgstr "Befehl: /unignore <Spieler>"
 
 #: src/commandhandler.cpp:292
-msgid "This command stops ignoring the given player if they are being ignored"
+msgid "Dieser Befehl beendet das Ignorieren von Spieler <Spieler>"
 msgstr ""
 
 #: src/commandhandler.cpp:297
@@ -430,7 +430,7 @@ msgid ""
 "you."
 msgstr ""
 "Kann keinen tab für Spieler \"%s\" erstellen! Entweder existiert bereits "
-"einer, oder der Spieler bist du."
+"einer, oder du bist der Spieler."
 
 #: src/commandhandler.cpp:397
 #, c-format
@@ -444,15 +444,15 @@ msgstr "Name der Party fehlt."
 #: src/commandhandler.cpp:423 src/commandhandler.cpp:471
 #: src/commandhandler.cpp:493
 msgid "Please specify a name."
-msgstr ""
+msgstr "Bitte spezifiziere einen Name."
 
 #: src/commandhandler.cpp:441
 msgid "Return toggles chat."
-msgstr "Enter-Taste schließt Chatzeile."
+msgstr "Enter-Taste schließt den Chat."
 
 #: src/commandhandler.cpp:441
 msgid "Message closes chat."
-msgstr "Nachricht schließt Chatzeile."
+msgstr "Nachricht schließt den Chat."
 
 #: src/commandhandler.cpp:450
 msgid "Return now toggles chat."
@@ -464,18 +464,18 @@ msgstr "Jetzt schließt jede Nachricht die Chatzeile."
 
 #: src/commandhandler.cpp:477
 msgid "Player already ignored!"
-msgstr ""
+msgstr "Spieler ist bereits ignoriert"
 
 #: src/commandhandler.cpp:484
 #, fuzzy
 msgid "Player successfully ignored!"
-msgstr "Party erfolgreich erstellt."
+msgstr "Spieler erfolrgreich ignoriert!"
 
 #: src/commandhandler.cpp:486
 #, fuzzy
 msgid "Player could not be ignored!"
 msgstr ""
-"Nachricht konnte nicht gesendet werden, sie wurde vom Spieler ignoriert."
+"Spieler konnte nicht ignoriert werden!"
 
 #: src/commandhandler.cpp:501
 msgid "Player wasn't ignored!"
@@ -489,7 +489,7 @@ msgstr "Spieler wird nicht länger ignoriert!"
 #, fuzzy
 msgid "Player could not be unignored!"
 msgstr ""
-"Nachricht konnte nicht gesendet werden, sie wurde vom Spieler ignoriert."
+"Spieler konnte nciht de-ignoriert werden!"
 
 #: src/commandhandler.h:31
 #, c-format
@@ -514,7 +514,7 @@ msgstr "Bildschirmfoto konnte nicht gespeichert werden!"
 #, fuzzy
 msgid "The connection to the server was lost."
 msgstr ""
-"Die Verbindung zum Server wurde getrennt, das Programm wird jetzt beendet"
+"Die Verbindung zum Server wurde verloren."
 
 #: src/game.cpp:360
 msgid "Network Error"
@@ -541,7 +541,7 @@ msgstr "Fehler beim Laden von %s"
 #: src/gui/beingpopup.cpp:75
 #, fuzzy, c-format
 msgid "Party: %s"
-msgstr "Party (%s)"
+msgstr "Party: %s"
 
 #: src/gui/buy.cpp:49 src/gui/buy.cpp:78 src/gui/buysell.cpp:47
 msgid "Buy"
@@ -599,7 +599,7 @@ msgstr "Abbrechen"
 
 #: src/gui/changeemaildialog.cpp:45 src/gui/changeemaildialog.cpp:54
 msgid "Change Email Address"
-msgstr "E-MailAdresse ändern"
+msgstr "E-Mail Adresse ändern"
 
 #: src/gui/changeemaildialog.cpp:49 src/gui/changepassworddialog.cpp:52
 #, c-format
@@ -622,7 +622,7 @@ msgstr "Die neue E-Mailadresse muss kürzer als %d Zeichen sein."
 
 #: src/gui/changeemaildialog.cpp:141
 msgid "The email address entries mismatch."
-msgstr "Die neuen E-Mailadresse stimmen nicht überein."
+msgstr "Die neuen E-Mail Adressen stimmen nicht überein."
 
 #: src/gui/changepassworddialog.cpp:47 src/gui/changepassworddialog.cpp:56
 #: src/gui/charselectdialog.cpp:128
@@ -640,7 +640,7 @@ msgstr "Gib dein neues Passwort zweimal ein:"
 
 #: src/gui/changepassworddialog.cpp:110
 msgid "Enter the old password first."
-msgstr ""
+msgstr "Gib zuerst das alte Passwort ein"
 
 #: src/gui/changepassworddialog.cpp:116
 #, c-format
@@ -654,7 +654,7 @@ msgstr "Das neue Passwort muss kürzer als %d Zeichen sein."
 
 #: src/gui/changepassworddialog.cpp:130
 msgid "The new password entries mismatch."
-msgstr "Die neues Passwörter stimmen nicht überein."
+msgstr "Die beiden Passwörter stimmen nciht überein."
 
 #: src/gui/charcreatedialog.cpp:53
 msgid "Create Character"
@@ -754,7 +754,7 @@ msgstr "Wähle"
 
 #: src/gui/charselectdialog.cpp:399 src/gui/charselectdialog.cpp:400
 msgid "(empty)"
-msgstr ""
+msgstr "(leer)"
 
 #: src/gui/chat.cpp:77
 msgid "Chat"
@@ -772,7 +772,7 @@ msgstr "Anwesenheitsliste wurde ins Chatprotokol geschrieben."
 #: src/gui/chat.cpp:469
 #, c-format
 msgid "Whispering to %s: %s"
-msgstr "Flüsternd zu %s: %s"
+msgstr "Flüstere zu %s: %s"
 
 #: src/gui/confirmdialog.cpp:42
 msgid "Yes"
@@ -784,17 +784,17 @@ msgstr "Nein"
 
 #: src/gui/debugwindow.cpp:43
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 #: src/gui/debugwindow.cpp:56
 #, c-format
 msgid "%d FPS (OpenGL)"
-msgstr ""
+msgstr "%d FPS (OpenGL)"
 
 #: src/gui/debugwindow.cpp:61 src/gui/debugwindow.cpp:64
 #, c-format
 msgid "%d FPS"
-msgstr ""
+msgstr "%d FPS"
 
 #: src/gui/debugwindow.cpp:65 src/gui/debugwindow.cpp:104
 #, c-format
@@ -814,7 +814,7 @@ msgstr "Übersichtskarte: %s"
 #: src/gui/debugwindow.cpp:68 src/gui/debugwindow.cpp:99
 #, c-format
 msgid "Cursor: (%d, %d)"
-msgstr ""
+msgstr "Maus: (%d, %d)"
 
 #: src/gui/debugwindow.cpp:69 src/gui/debugwindow.cpp:111
 #, c-format
@@ -874,7 +874,7 @@ msgstr "Aufteilen"
 
 #: src/gui/inventorywindow.cpp:86 src/gui/outfitwindow.cpp:51
 msgid "Outfits"
-msgstr ""
+msgstr "Kleidung"
 
 #: src/gui/inventorywindow.cpp:97 src/gui/storagewindow.cpp:84
 msgid "Slots:"
