@@ -315,7 +315,7 @@ msgstr ""
 #: src/commandhandler.cpp:253
 #, fuzzy
 msgid "Command: /createparty <name>"
-msgstr "Befehl: /create <Party-Name>"
+msgstr "Befehl: /createparty <name>"
 
 #: src/commandhandler.cpp:254
 #, fuzzy
@@ -2054,12 +2054,12 @@ msgid "Cannot send empty chat!"
 msgstr "Kann keine leere Nachricht senden!"
 
 #: src/gui/widgets/whispertab.cpp:70
-msgid "/ignore > Ignore the other player"
+msgid "/ignore > ignoriert den anderen Spieler"
 msgstr ""
 
 #: src/gui/widgets/whispertab.cpp:71
 msgid "/unignore > Stop ignoring the other player"
-msgstr ""
+msgstr "/unignore > de ignoriert den anderen Spieler"
 
 #: src/gui/widgets/whispertab.cpp:72
 msgid "/close > Close the whisper tab"
@@ -2076,7 +2076,7 @@ msgstr "Dieser Befehl schließt den aktuellen privaten Tab."
 #: src/gui/widgets/whispertab.cpp:87
 #, fuzzy
 msgid "Command: /ignore"
-msgstr "Befehl: /item"
+msgstr "Befehl: /ignore"
 
 #: src/gui/widgets/whispertab.cpp:88
 #, fuzzy
