@@ -155,11 +155,11 @@ msgstr "/q > Ersatz für query"
 
 #: src/commandhandler.cpp:171
 msgid "/ignore > ignore a player"
-msgstr "ignoriert einen Spieler"
+msgstr "/ignore > ignoriert einen Spieler"
 
 #: src/commandhandler.cpp:172
 msgid "/unignore > stop ignoring a player"
-msgstr "deignoriert einen Spieler"
+msgstr "/unignore > beachtet einen SPieler wieder"
 
 #: src/commandhandler.cpp:174
 msgid "/list > Display all public channels"
@@ -670,14 +670,14 @@ msgstr "Name:"
 #: src/gui/charcreatedialog.cpp:70 src/gui/charcreatedialog.cpp:75
 #: src/gui/outfitwindow.cpp:67
 msgid ">"
-msgstr ""
+msgstr ">"
 
 #. TRANSLATORS: This is a narrow symbol used to denote 'previous'.
 #. You may change this symbol if your language uses another.
 #: src/gui/charcreatedialog.cpp:73 src/gui/charcreatedialog.cpp:76
 #: src/gui/outfitwindow.cpp:66
 msgid "<"
-msgstr ""
+msgstr "<"
 
 #: src/gui/charcreatedialog.cpp:74
 msgid "Hair color:"
@@ -988,11 +988,11 @@ msgstr "Es misslang den Brief zu senden oder er war ungültig."
 #: src/gui/outfitwindow.cpp:154
 #, c-format
 msgid "Outfit: %d"
-msgstr ""
+msgstr "Kleidung: %d"
 
 #: src/gui/outfitwindow.cpp:70
 msgid "Unequip first"
-msgstr "erstes ausziehen"
+msgstr "zuerst ausziehen"
 
 #: src/gui/popupmenu.cpp:84
 #, fuzzy, c-format
@@ -1027,7 +1027,7 @@ msgstr "Ignoriere %s"
 #: src/gui/popupmenu.cpp:115 src/gui/popupmenu.cpp:124
 #, c-format
 msgid "Unignore %s"
-msgstr "Ignoriere %s nicht mehr"
+msgstr "beachte %s wieder"
 
 #: src/gui/popupmenu.cpp:118
 #, c-format
@@ -1037,7 +1037,7 @@ msgstr "Ignoriere %s komplett"
 #: src/gui/popupmenu.cpp:130
 #, c-format
 msgid "Follow %s"
-msgstr ""
+msgstr "folge %s"
 
 #: src/gui/popupmenu.cpp:133
 #, c-format
@@ -1051,7 +1051,7 @@ msgstr "Lade %s in deine Party ein"
 
 #: src/gui/popupmenu.cpp:144
 msgid "Kick player"
-msgstr ""
+msgstr "entferne Spieler"
 
 #: src/gui/popupmenu.cpp:153
 #, c-format
@@ -1064,7 +1064,7 @@ msgstr "Monster töten"
 
 #: src/gui/popupmenu.cpp:174
 msgid "Add name to chat"
-msgstr "Füge Namen zu Chat hinzu"
+msgstr "Füge den Namen in den Chat ein"
 
 #: src/gui/popupmenu.cpp:191
 #, c-format
@@ -1166,7 +1166,7 @@ msgstr "Port:"
 #: src/gui/serverdialog.cpp:133
 #, fuzzy
 msgid "Server type:"
-msgstr "Server:"
+msgstr "Server Art:"
 
 #: src/gui/serverdialog.cpp:153
 msgid "Connect"
@@ -1175,7 +1175,7 @@ msgstr "Verbinde..."
 #: src/gui/serverdialog.cpp:154
 #, fuzzy
 msgid "Custom Server"
-msgstr "Benutzerdefinierter Zeiger"
+msgstr "Eigener Server"
 
 #: src/gui/serverdialog.cpp:242
 msgid "Please type both the address and the port of a server."
@@ -1217,12 +1217,12 @@ msgstr "Lautstärke der Musik"
 #: src/gui/setup_audio.cpp:94
 #, fuzzy
 msgid "Notice"
-msgstr "Kein Text"
+msgstr "Gedanken-Festhalter"
 
 #: src/gui/setup_audio.cpp:94
 msgid "You may have to restart your client if you want to download new music"
 msgstr ""
-"Der Client muss neugestartet werden, wenn die neue Musik heruntergeladen "
+"Der Client muss neugestartet werden, wenn neue Musik heruntergeladen "
 "werden soll"
 
 #: src/gui/setup_audio.cpp:106
@@ -1239,7 +1239,7 @@ msgstr "Farben"
 
 #: src/gui/setup_colors.cpp:71
 msgid "Type:"
-msgstr "Typ: "
+msgstr "Typ:"
 
 #: src/gui/setup_colors.cpp:82 src/gui/setup_colors.cpp:330
 msgid "Static"
@@ -1306,7 +1306,7 @@ msgstr "Stopp"
 
 #: src/gui/setup_joystick.cpp:84
 msgid "Rotate the stick"
-msgstr "Kreise den Steuerknüppel"
+msgstr "Kreise den Joystick"
 
 #: src/gui/setup_keyboard.cpp:77
 msgid "Keyboard"
@@ -1319,7 +1319,7 @@ msgstr "Zuordnen"
 #: src/gui/setup_keyboard.cpp:90
 #, fuzzy
 msgid "Unassign"
-msgstr "Zuordnen"
+msgstr "nicht zugeordnet"
 
 #: src/gui/setup_keyboard.cpp:94
 msgid "Default"
@@ -1486,7 +1486,7 @@ msgstr "Video"
 #: src/gui/setup_video.cpp:227
 #, fuzzy
 msgid "Show monster damage"
-msgstr "Eigener Name"
+msgstr "Monster Schaden"
 
 #: src/gui/setup_video.cpp:233
 msgid "Overhead text"
@@ -1539,13 +1539,13 @@ msgstr "Änderungen treten erst nach einem Neustart des Programms in Kraft."
 #: src/gui/setup_video.cpp:411
 #, fuzzy
 msgid "Changing to OpenGL"
-msgstr "Ändere OpenGL"
+msgstr "Benutze OpenGL"
 
 #: src/gui/setup_video.cpp:412
 msgid "Applying change to OpenGL requires restart."
 msgstr ""
-"Änderungen an OpenGL werden erst nach einem Neustart der Anwendung "
-"übernommen."
+"Änderungen an OpenGL benötigen einen Neustart der Anwendung."
+""
 
 #: src/gui/setup_video.cpp:486 src/gui/setup_video.cpp:491
 #, fuzzy
@@ -1607,7 +1607,7 @@ msgstr "Stufe: %d"
 #: src/gui/socialwindow.cpp:118
 #, fuzzy, c-format
 msgid "Invited user %s to guild %s."
-msgstr "Spieler %s einladen"
+msgstr "Spieler %s zu Gile %s einladen"
 
 #: src/gui/socialwindow.cpp:127
 #, fuzzy, c-format
@@ -1622,46 +1622,46 @@ msgstr "Spieler einladen"
 #: src/gui/socialwindow.cpp:138
 #, fuzzy, c-format
 msgid "Who would you like to invite to guild %s?"
-msgstr "Wen möchtest du einladen?"
+msgstr "Wen möchtest du zu Gilde %s einladen?"
 
 #: src/gui/socialwindow.cpp:147
 #, fuzzy
 msgid "Leave Guild?"
-msgstr "Gilde erstellen"
+msgstr "Gilde verlassen?"
 
 #: src/gui/socialwindow.cpp:148
 #, fuzzy, c-format
 msgid "Are you sure you want to leave guild %s?"
-msgstr "Bist Du sicher, dass Du das Spiel verlassen möchtest?"
+msgstr "Bist Du sicher, dass Du die Gile %s verlassen möchtest?"
 
 #: src/gui/socialwindow.cpp:183
 #, fuzzy, c-format
 msgid "Invited user %s to party."
-msgstr "Spieler %s einladen"
+msgstr "Spieler %s zur Party einladen"
 
 #: src/gui/socialwindow.cpp:190
 #, c-format
 msgid "Party %s quit requested."
-msgstr ""
+msgstr "Party %s auflösung beantragt"
 
 #: src/gui/socialwindow.cpp:200
 #, fuzzy
 msgid "Member Invite to Party"
-msgstr "Spieler einladen"
+msgstr "Spieler zur Party eingeladen"
 
 #: src/gui/socialwindow.cpp:201
 #, fuzzy, c-format
 msgid "Who would you like to invite to party %s?"
-msgstr "Wen möchtest du einladen?"
+msgstr "Wen möchtest du einladen zu Party %s einladen?"
 
 #: src/gui/socialwindow.cpp:210
 msgid "Leave Party?"
-msgstr ""
+msgstr "Party verlassen?"
 
 #: src/gui/socialwindow.cpp:211
 #, fuzzy, c-format
 msgid "Are you sure you want to leave party %s?"
-msgstr "Bist Du sicher, dass Du das Spiel verlassen möchtest?"
+msgstr "Bist Du sicher, dass Du die Party %s verlassen möchtest?"
 
 #: src/gui/socialwindow.cpp:240
 msgid "Create Guild"
@@ -1675,7 +1675,7 @@ msgstr "Charakter erstellen"
 #: src/gui/socialwindow.cpp:280 src/gui/windowmenu.cpp:64
 #, fuzzy
 msgid "Social"
-msgstr "Special"
+msgstr "Sozial"
 
 #: src/gui/socialwindow.cpp:298
 #, fuzzy
@@ -1685,7 +1685,7 @@ msgstr "einladen"
 #: src/gui/socialwindow.cpp:299
 #, fuzzy
 msgid "Leave"
-msgstr "Stufe: %d"
+msgstr "verlasse"
 
 #: src/gui/socialwindow.cpp:395
 #, fuzzy, c-format
