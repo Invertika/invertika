@@ -52,7 +52,7 @@ SetCompressor /SOLID lzma
 
 Function RunTMW
 SetOutPath $INSTDIR
-Exec "$INSTDIR\invertika.exe"
+Exec '"$INSTDIR\invertika.exe" branding.xml'
 FunctionEnd
 
 Function changeFinishImage
