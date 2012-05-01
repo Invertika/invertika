@@ -114,11 +114,11 @@ msgstr "-- Hilfe --"
 
 #: src/commandhandler.cpp:157
 msgid "/help > Display this help"
-msgstr "/help > diese Hilfe anzeigen"
+msgstr "/help > zeigt diese Hile an"
 
 #: src/commandhandler.cpp:159
 msgid "/where > Display map name"
-msgstr "/where > Zeige den Map Namen an"
+msgstr "/where > Zeigt den Map namen an"
 
 #: src/commandhandler.cpp:160
 msgid "/who > Display number of online users"
@@ -159,11 +159,17 @@ msgstr "/ignore > ignoriert einen Spieler"
 
 #: src/commandhandler.cpp:172
 msgid "/unignore > stop ignoring a player"
-msgstr "/unignore > beachtet einen SPieler wieder"
+msgstr "/unignore > beachtet einen Spieler wieder"
 
 #: src/commandhandler.cpp:174
 msgid "/list > Display all public channels"
 msgstr "/list > Zeige alle öffentlichen Kanäle"
+
+#: src/commandhandler.cpp:174
+msgid "/away > Tell the other whispering players "
+"you're away from keyboard."
+msgstr "/away > Sagt den zu dir flüsternden Spielern "
+"dass du abwesend bist."
 
 #: src/commandhandler.cpp:175
 msgid "/join > Join or create a channel"
@@ -330,6 +336,20 @@ msgstr "Befehl: /party <Name>"
 msgid "This command invites <nick> to party with you."
 msgstr "Dieser Befehl lädt Spieler <Name> zu einer Party mit Dir ein."
 
+#: src/commandhandler.cpp:263
+msgid "Command: /away <afk reason>"
+msgstr "Befehl: /away <abwesenheits Grund>"
+
+#: src/commandhandler.cpp:264
+msgid "This command tells "
+"you're away from keyboard with the given reason."
+msgstr "Dieser Befehl besagt,"
+"dass du mit dem gegebenem Grund abwesend bist."
+
+#: src/commandhandler.cpp:266
+msgid "Command: /away"
+msgstr "Befehl: /away"
+
 #: src/commandhandler.cpp:265
 msgid "Command: /present"
 msgstr "Befehl: /present"
@@ -364,6 +384,7 @@ msgstr "Dieser Befehl beendet den Mitschnitt des Chats."
 #: src/commandhandler.cpp:280
 msgid "Command: /toggle <state>"
 msgstr "Befehl: /toggle <Status>"
+
 
 #: src/commandhandler.cpp:281
 msgid ""
@@ -1710,12 +1731,12 @@ msgstr "Partyeinladung von %s abgelehnt."
 #: src/gui/socialwindow.cpp:464
 #, c-format
 msgid "Creating guild called %s."
-msgstr "Erstelle der Gilde %s."
+msgstr "Erstelle Gilde %s."
 
 #: src/gui/socialwindow.cpp:478
 #, fuzzy, c-format
 msgid "Creating party called %s."
-msgstr "Erstelle der Gilde %s."
+msgstr "Erstelle Partye %s."
 
 #: src/gui/socialwindow.cpp:485
 msgid "Guild Name"
