@@ -1790,17 +1790,17 @@ msgstr "Nehme Partyeinladung an"
 
 #: src/gui/socialwindow.cpp:566
 msgid "Cannot create party. You are already in a party"
-msgstr ""
+msgstr "Kann keine Party erstellen. Du bist bereit in einer Party"
 
 #: src/gui/socialwindow.cpp:571
 #, fuzzy
 msgid "Party Name"
-msgstr "Party"
+msgstr "Party Name"
 
 #: src/gui/socialwindow.cpp:572
 #, fuzzy
 msgid "Choose your party's name."
-msgstr "Wähle den Namen deiner Gilde"
+msgstr "Wähle den Namen deiner Party"
 
 #: src/gui/specialswindow.cpp:85 src/gui/windowmenu.cpp:62
 msgid "Specials"
@@ -1809,12 +1809,12 @@ msgstr "Special"
 #: src/gui/specialswindow.cpp:174
 #, c-format
 msgid "Specials Set %d"
-msgstr ""
+msgstr "Special Set %d"
 
 #: src/gui/specialswindow.cpp:191
 #, c-format
 msgid "Special %d"
-msgstr ""
+msgstr "Special %d"
 
 #: src/gui/statuswindow.cpp:100 src/gui/statuswindow.cpp:247
 #, c-format
@@ -1875,17 +1875,17 @@ msgstr "Job:"
 #: src/gui/statuswindow.cpp:229
 #, fuzzy, c-format
 msgid "Character points: %d"
-msgstr "Spielfigurattribute OK"
+msgstr "CHaracter Punkte: %d"
 
 #: src/gui/statuswindow.cpp:235
 #, fuzzy, c-format
 msgid "Correction points: %d"
-msgstr "Fähigkeitspunkte: %d"
+msgstr "Korrekturpunkte: %d"
 
 #: src/gui/statuswindow.cpp:251
 #, fuzzy
 msgid "Level"
-msgstr "Stufe: %d"
+msgstr "Stufe"
 
 #: src/gui/storagewindow.cpp:59
 msgid "Storage"
@@ -1935,8 +1935,8 @@ msgstr "Ändern"
 #: src/gui/trade.cpp:275
 msgid "Failed adding item. You can not overlap one kind of item on the window."
 msgstr ""
-"Gegenstand konnte nicht hinzugefügt werden. Du kannst keinen weiteren dieser "
-"Gegenstände hinzufügen."
+"Item konnte nicht hinzugefügt werden. Du kannst kein Item-Arten überlappen."
+""
 
 #: src/gui/trade.cpp:318
 msgid "You don't have enough money."
@@ -1984,19 +1984,19 @@ msgstr "/users > Zeigt eine Liste der Spieler im aktuellen Kanal"
 
 #: src/gui/widgets/channeltab.cpp:50
 msgid "/topic > Set the topic of the current channel"
-msgstr "/topic > Setze das Thema des aktuellen Kanals"
+msgstr "/topic > Setzt das Thema des aktuellen Kanals"
 
 #: src/gui/widgets/channeltab.cpp:51
 msgid "/quit > Leave a channel"
-msgstr "/quit > Verlasse einen Kanal"
+msgstr "/quit > Verlässt einen Kanal"
 
 #: src/gui/widgets/channeltab.cpp:52
 msgid "/op > Make a user a channel operator"
-msgstr "/op > Ernenne einen Spieler zum Kanalmoderator"
+msgstr "/op > Ernennt einen Spieler zum Kanalmoderator"
 
 #: src/gui/widgets/channeltab.cpp:53
 msgid "/kick > Kick a user from the channel"
-msgstr "/kick > Werfe einen Spieler aus dem Kanal"
+msgstr "/kick > Wirft einen Spieler aus dem Kanal"
 
 #: src/gui/widgets/channeltab.cpp:63
 msgid "Command: /users"
@@ -2012,7 +2012,7 @@ msgstr "Befehl: /topic <Thema>"
 
 #: src/gui/widgets/channeltab.cpp:69
 msgid "This command sets the topic to <message>."
-msgstr "Dieser Befehl setzt das Theme auf <Thema>."
+msgstr "Dieser Befehl setzt das Thema auf <Thema>."
 
 #: src/gui/widgets/channeltab.cpp:73
 msgid "Command: /quit"
@@ -2054,7 +2054,7 @@ msgstr "Gib einen Spieler an, der Moderator werden soll!"
 
 #: src/gui/widgets/channeltab.cpp:126
 msgid "Need a user to kick!"
-msgstr "Gib einen Spieler an, der aus dem Kanal geworfen werden soll"
+msgstr "Brauche einen Spieler zum rauswerfen."
 
 #: src/gui/widgets/chattab.cpp:118
 msgid "Global announcement:"
@@ -2068,7 +2068,7 @@ msgstr "Globale Ansage von %s:"
 #: src/gui/widgets/chattab.cpp:150
 #, fuzzy, c-format
 msgid "%s whispers: %s"
-msgstr "%s flüstert: "
+msgstr "%s flüstert: %s"
 
 #: src/gui/widgets/whispertab.cpp:51
 msgid "Cannot send empty chat!"
@@ -2080,7 +2080,7 @@ msgstr ""
 
 #: src/gui/widgets/whispertab.cpp:71
 msgid "/unignore > Stop ignoring the other player"
-msgstr "/unignore > de ignoriert den anderen Spieler"
+msgstr "/unignore > beachtet den anderen Spieler wieder"
 
 #: src/gui/widgets/whispertab.cpp:72
 msgid "/close > Close the whisper tab"
@@ -2102,14 +2102,14 @@ msgstr "Befehl: /ignore"
 #: src/gui/widgets/whispertab.cpp:88
 #, fuzzy
 msgid "This command ignores the other player regardless of current relations."
-msgstr "Dieser Befehl zeigt die Anzahl der Spieler an, die gerade online sind."
+msgstr "Dieser Befehl ignoriert den anderen Spieler ungeachtet der Beziehung zu ihm."
 
 #: src/gui/widgets/whispertab.cpp:94
 #, fuzzy
 msgid "This command stops ignoring the other player if they are being ignored."
 msgstr ""
-"Dieser Befehl startet den Mitschnitt des Chats (Chatlog) in die Datei "
-"<Dateiname>."
+"Dieser Befehl beachtet den anderen Spieler, fals er ignoriert wurde."
+""
 
 #: src/gui/windowmenu.cpp:54
 msgid "Status"
@@ -2273,11 +2273,11 @@ msgstr "Statusfenster"
 
 #: src/keyboardconfig.cpp:83
 msgid "Wear Outfit"
-msgstr ""
+msgstr "Trage Kleidung"
 
 #: src/keyboardconfig.cpp:84
 msgid "Copy Outfit"
-msgstr ""
+msgstr "Kopiere Kleidung"
 
 #: src/keyboardconfig.cpp:85 src/keyboardconfig.cpp:86
 #: src/keyboardconfig.cpp:87 src/keyboardconfig.cpp:88
@@ -2343,7 +2343,7 @@ msgstr[1] "Du hast %s [@@%d|%s@@] aufgehoben."
 
 #: src/main.cpp:43
 msgid "mana [options] [mana-file]"
-msgstr ""
+msgstr "mana [options] [mana-file]"
 
 #: src/main.cpp:44
 msgid "Options:"
@@ -2355,7 +2355,7 @@ msgstr "  -v --version        : Die Version des Spieles anzeigen"
 
 #: src/main.cpp:46
 msgid "  -h --help           : Display this help"
-msgstr "  - --help           : Zeigt diesen Hilfstext an"
+msgstr "  -h --help           : Zeigt diesen Hilfstext an"
 
 #: src/main.cpp:47
 #, fuzzy
@@ -2505,7 +2505,7 @@ msgstr "Nachricht konnte nicht gesendet werden, Spieler ist offline."
 #: src/net/ea/chathandler.cpp:84
 msgid "Whisper could not be sent, ignored by user."
 msgstr ""
-"Nachricht konnte nicht gesendet werden, sie wurde vom Spieler ignoriert."
+"Nachricht konnte nicht gesendet werden, sie wurden vom Spieler ignoriert."
 
 #: src/net/ea/chathandler.cpp:171
 msgid "MVP player."
@@ -2693,7 +2693,7 @@ msgstr "Name der Party fehlt."
 
 #: src/net/ea/guildhandler.cpp:293
 msgid "Could not inivte user to guild."
-msgstr ""
+msgstr "Konnte den user nicht ind die Gilde einladen."
 
 #: src/net/ea/guildhandler.cpp:298
 #, fuzzy
@@ -2703,11 +2703,11 @@ msgstr "%s hat Deine Einladung zurückgewiesen."
 #: src/net/ea/guildhandler.cpp:303
 #, fuzzy
 msgid "User is now part of your guild."
-msgstr "%s ist nun Mitglied Deiner Party."
+msgstr "%s ist nun Mitglied deiner Gilde"
 
 #: src/net/ea/guildhandler.cpp:308
 msgid "Your guild is full."
-msgstr ""
+msgstr "Deine Gilde sit voll."
 
 #: src/net/ea/guildhandler.cpp:313
 #, fuzzy
@@ -2716,7 +2716,7 @@ msgstr "Unbekannte Reaktion auf die Einladung von %s."
 
 #: src/net/ea/guildhandler.cpp:390
 msgid "Guild creation isn't supported yet."
-msgstr ""
+msgstr "Es können noch keine Gilden erstellt werden."
 
 #: src/net/ea/gui/partytab.cpp:43
 msgid "Party"
@@ -2792,7 +2792,7 @@ msgid ""
 "sharing, or \"0\", \"no\", \"false\" to disable experience sharing."
 msgstr ""
 "Gültige Werte für <Wert> sind: \"1\",\"yes\",\"true\" um das Teilen zu "
-"erlauben, \"0\",\"no\",\"false\" verbieten es."
+"erlauben, \"0\",\"no\",\"false\" um es zu verbieten."
 
 #: src/net/ea/gui/partytab.cpp:100
 msgid "Command: /exp"
@@ -2898,7 +2898,7 @@ msgid ""
 "You have been temporarily banned from the game until %s.\n"
 "Please contact the GM team via the forums."
 msgstr ""
-"Du wurdest zeitweise, bis %s vom Spiel ausgeschlossen.\n"
+"Du wurdest bis zum %s vom Spiel ausgeschlossen.\n"
 "Bitte wende dich mittels des Forums an das GM-Team."
 
 #: src/net/ea/loginhandler.cpp:172
@@ -2907,7 +2907,7 @@ msgstr "Dieser Spielername ist bereits vergeben"
 
 #: src/net/ea/network.cpp:145
 msgid "Empty address given to Network::connect()!"
-msgstr ""
+msgstr "Lerre Adresse wurde Network::connct() übergeben!"
 
 #: src/net/ea/network.cpp:345
 msgid "Unable to resolve host \""
@@ -2965,7 +2965,7 @@ msgstr "Einladungen auf diesem Weg werden im Moment nicht unterstützt."
 
 #: src/net/ea/partyhandler.cpp:334
 msgid "You can only inivte when you are in a party!"
-msgstr ""
+msgstr "Du kannst nur einladen, wenn du in einer Party bist."
 
 #: src/net/ea/partyhandler.cpp:365
 #, c-format
@@ -2979,7 +2979,7 @@ msgstr "Ach ja: Du bist Tot."
 #: src/net/ea/playerhandler.cpp:100 src/net/manaserv/beinghandler.cpp:305
 msgid "We regret to inform you that your character was killed in battle."
 msgstr ""
-"Es tut uns Leid, Euch mitteilen zu müssen, dass Ihr im Kampfe gefallen seid."
+"Es tut uns Leid Euch mitteilen zu müssen, dass Ihr im Kampfe gefallen seid."
 
 #: src/net/ea/playerhandler.cpp:102 src/net/manaserv/beinghandler.cpp:307
 msgid "You are not that alive anymore."
@@ -3037,7 +3037,7 @@ msgstr "Sieht aus, als würde Dein Kopf Dich anschauen."
 msgid ""
 "You screwed up again, dump your body down the tubes and get you another one."
 msgstr ""
-"Du hast schon wieder versagt. Spül Deine Überreste hinunter und hol Dir einen "
+"Du hast schon wieder versagt. Spül Deine Überreste hinunter und hol Dir ein "
 "paar Neue."
 
 #: src/net/ea/playerhandler.cpp:123
@@ -3306,7 +3306,7 @@ msgstr "Spielfigurattribute sind zu klein"
 
 #: src/net/manaserv/charhandler.cpp:155
 msgid "One stat is zero."
-msgstr ""
+msgstr "Ein Status ist null."
 
 #: src/net/manaserv/charhandler.cpp:187
 msgid "Player deleted."
@@ -3713,7 +3713,7 @@ msgstr "unbenannt"
 #~ msgstr "Ignoriere"
 
 #~ msgid "unignore"
-#~ msgstr "nicht ignorieren"
+#~ msgstr "wieder beachten"
 
 #, fuzzy
 #~ msgid "join"
@@ -4001,7 +4001,7 @@ msgstr "unbenannt"
 #~ msgstr "Neuer Eintrag"
 
 #~ msgid "type"
-#~ msgstr "Typ: "
+#~ msgstr "type"
 
 #, fuzzy
 #~ msgid "unknown"
@@ -4045,7 +4045,7 @@ msgstr "unbenannt"
 #~ msgstr "stelle Standardeinstellungen her"
 
 #~ msgid "whisper tab"
-#~ msgstr "geflüsterte Nachricht"
+#~ msgstr "Privater Tab"
 
 #, fuzzy
 #~ msgid "No modes available"
@@ -4132,7 +4132,7 @@ msgstr "unbenannt"
 
 #, fuzzy
 #~ msgid "money"
-#~ msgstr "Gefühle"
+#~ msgstr "Geld"
 
 #, fuzzy
 #~ msgid "Error loading update file: %s"
@@ -4395,19 +4395,19 @@ msgstr "unbenannt"
 
 #, fuzzy
 #~ msgid "updatehost"
-#~ msgstr "Ungültiger Updateserver: "
+#~ msgstr "Updateserver"
 
 #, fuzzy
 #~ msgid "Error: Invalid update host: %s"
-#~ msgstr "Ungültiger Updateserver: "
+#~ msgstr "Ungültiger Updateserver: %s"
 
 #, fuzzy
 #~ msgid "Error: %s can't be made, but doesn't exist!"
-#~ msgstr " konnte nicht erstellt werden, aber existiert auch nicht! Beende."
+#~ msgstr "%s konnte nicht erstellt werden, aber existiert auch nicht!"
 
 #, fuzzy
 #~ msgid "Error: %s/%s can't be made, but doesn't exist!"
-#~ msgstr " konnte nicht erstellt werden, aber existiert auch nicht! Beende."
+#~ msgstr "%s/%s konnte nicht erstellt werden, existiert aber auch nicht."
 
 #, fuzzy
 #~ msgid "appName"
@@ -4536,13 +4536,13 @@ msgstr "unbenannt"
 #~ msgstr "Netzwerkfehler: %s"
 
 #~ msgid "Unknown party exp option: %d\n"
-#~ msgstr "Unbekannte Party exp Option: %d\n"
+#~ msgstr "Unbekannte Party Erfehurngs Option: %d\n"
 
 #~ msgid "Unknown party item option: %d\n"
 #~ msgstr "Unbekannte Party Item Option: %d\n"
 
 #~ msgid "Warping to %s (%d, %d)"
-#~ msgstr "Flüsternd zu %s: (%d ,%d)"
+#~ msgstr "Warpen zu %s: (%d ,%d)"
 
 #~ msgid "Adjust scrolling by %d:%d"
 #~ msgstr "Justiere Scrolling %d:%d"
@@ -4709,7 +4709,7 @@ msgstr "unbenannt"
 
 #, fuzzy
 #~ msgid "event"
-#~ msgstr "Letzter Server:"
+#~ msgstr "Event"
 
 #~ msgid "hit"
 #~ msgstr "getroffen"
@@ -4730,7 +4730,7 @@ msgstr "unbenannt"
 #~ msgstr "verfehlt"
 
 #~ msgid "hurt"
-#~ msgstr "verletzten"
+#~ msgstr "verletzen"
 
 #, fuzzy
 #~ msgid "action"
