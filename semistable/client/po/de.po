@@ -114,11 +114,11 @@ msgstr "-- Hilfe --"
 
 #: src/commandhandler.cpp:157
 msgid "/help > Display this help"
-msgstr "/help > zeigt diese Hile an"
+msgstr "/help > zeigt diese Hilfe an"
 
 #: src/commandhandler.cpp:159
 msgid "/where > Display map name"
-msgstr "/where > Zeigt den Map namen an"
+msgstr "/where > Zeigt den Karten Namen und die Koordinaten des Spielers auf der aktuellen Karte an."
 
 #: src/commandhandler.cpp:160
 msgid "/who > Display number of online users"
@@ -147,7 +147,7 @@ msgstr "/w > Ersatz für msg"
 #: src/commandhandler.cpp:168
 msgid "/query > Makes a tab for private messages with another user"
 msgstr ""
-"/query > Öffnet einen Tab für private Nachrichten mit einem anderen Benutzer"
+"/query > Öffnet ein privates Gespärch mit einem Mitspieler."
 
 #: src/commandhandler.cpp:169
 msgid "/q > Alias of query"
@@ -178,7 +178,7 @@ msgstr "/join > Trete einem Kanal bei oder erstelle einen neuen Kanal"
 #: src/commandhandler.cpp:177
 #, fuzzy
 msgid "/createparty > Create a new party"
-msgstr "/createparty > Erstelle eine neue Party"
+msgstr "/createparty > Erstellt eine neue Party"
 
 #: src/commandhandler.cpp:178
 msgid "/party > Invite a user to party"
@@ -186,7 +186,7 @@ msgstr "/party > Lädt einen Benutzer zu deiner Party ein"
 
 #: src/commandhandler.cpp:180
 msgid "/record > Start recording the chat to an external file"
-msgstr "/record > Started die Aufzeichnung des Chats in eine externe Datei."
+msgstr "/record > Startet die Aufzeichnung des Chats in eine externe Datei."
 
 #: src/commandhandler.cpp:181
 msgid "/toggle > Determine whether <return> toggles the chat log"
@@ -197,6 +197,10 @@ msgid "/present > Get list of players present (sent to chat log, if logging)"
 msgstr ""
 "/present > Liste anwesender Spieler (wird im Chat-log aufgezeichnet, falls "
 "das Log aktiviert ist)"
+
+#: src/commandhandler.cpp:183
+msgid "/createparty > Create a new party"
+msgstr "/createparty > Erstellt eine neue Party"
 
 #: src/commandhandler.cpp:184
 msgid "/announce > Global announcement (GM only)"
@@ -363,6 +367,14 @@ msgstr ""
 "sendet sie entweder an das Chatlog, falls aktiviert, oder zeigt sie im "
 "Chatfenster an."
 
+#: src/commandhandler.cpp:271
+msgid "Command: /createparty <name>"
+msgstr "Befehl: /createparty <name>"
+
+#: src/commandhandler.cpp:272
+msgid "This command creates a new party called <name>."
+msgstr "Dieser Befehl erstellt eine neue Party namens <name>"
+
 #: src/commandhandler.cpp:272
 msgid "Command: /record <filename>"
 msgstr "Befehl: /record <Dateiname>"
@@ -426,7 +438,7 @@ msgstr "Befehl: /where"
 
 #: src/commandhandler.cpp:298
 msgid "This command displays the name of the current map."
-msgstr "Dieser Befehl zeigt den Namen der aktuellen Karte an."
+msgstr "Dieser Befehl zeigt den Namen der aktuellen Karte und die Koordinaten des Spielers an."
 
 #: src/commandhandler.cpp:302
 msgid "Command: /who"
