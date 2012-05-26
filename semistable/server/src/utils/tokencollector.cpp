@@ -18,6 +18,7 @@
  *  along with The Mana Server.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <stdint.h>
 #include "utils/tokencollector.hpp"
 
 /* We are optimistic and we assume that clients connect as soon as possible.
